@@ -1,10 +1,10 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 public class SwitchDemoFallThrough {
 public static void main(String[] args) {
 Scanner ler = new Scanner(System.in);
 java.util.ArrayList<String> futureMonths =new java.util.ArrayList<String>();
-int month;
-month = ler.nextInt();
+int month=8;
+//month = ler.nextInt();
 switch (month) {
 case 1: futureMonths.add("January");
 case 2: futureMonths.add("February");
