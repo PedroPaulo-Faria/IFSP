@@ -107,26 +107,6 @@ void freeList(Funcionario* lista)
 
 
 
-
-Funcionario* comparar(Funcionario* lista, int p)
-{
-	Funcionario* aux;
-	aux = lista;
-	while (aux != NULL && aux->prontuario != p)
-	{
-		aux = aux->prox;
-	}
-	if (aux == NULL)
-	{
-		aux = new Funcionario;
-		aux->prontuario = -1;
-		aux->prox = NULL;
-	}
-	return aux;
-}
-
-
-
 int main(int argc, char** argv)
 {
 	
@@ -135,8 +115,7 @@ int main(int argc, char** argv)
 	int sair =1;
 	string nome;
 	int prontuario;
-	double salario;
-	int ret;		
+	double salario;		
 	listafunc = init();		
     while(sair!=0)
 	{
@@ -155,8 +134,8 @@ int main(int argc, char** argv)
 			sair=0;
 		}
 		
-		if(escolha==1){			 
-			Funcionario *comparacao;			
+		if(escolha==1){		 
+						
 			cout<<"Insira o prontuario: ";
 			cin>>prontuario; 					    												
 			cout<<endl;
